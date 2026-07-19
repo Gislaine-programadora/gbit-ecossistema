@@ -1,8 +1,4 @@
-<div align="center">
 
-<img src="./assets/gbit-ecossistema.png" alt="GBIT CLI Ecosystem" width="400"/>
-
-</div>
 
 
 <div align="center">
@@ -20,7 +16,7 @@ Build • Clone • Generate • Document • Develop
 ![License](https://img.shields.io/badge/license-MIT-22C55E?style=for-the-badge)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-08C0FF?style=for-the-badge)
 
-### 🌐 Live Demo
+### 🌐 Live 
 
 https://gislaine-programadora.github.io/gbit-ecossitema/
 
