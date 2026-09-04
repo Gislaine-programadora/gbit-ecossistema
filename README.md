@@ -24,10 +24,11 @@
 ### 🌐 Live 
 
 <p>
-  <a href="https://gislaine-programadora.github.io/gbit-ecossitema/">
-    <strong>🚀 Access GBIT CLI Ecosystem Live </strong>
+  <a href="https://gislaine-programadora.github.io/gbit-ecossistema/">
+    <strong>🚀 Access GBIT CLI Ecosystem Live</strong>
   </a>
 </p>
+
 
 </div>
 
