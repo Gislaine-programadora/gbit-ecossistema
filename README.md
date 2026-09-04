@@ -1,4 +1,41 @@
+<div align="center">
+
 # 🚀 GBIT CLI Ecosystem
+
+<p>
+  <img
+    src="assets/gbit-ecossistema.png"
+    alt="GBIT CLI Ecosystem"
+    width="900"
+  >
+</p>
+
+### Professional Open Source CLI Tools for Modern Developers
+
+**Build • Clone • Generate • Document • Develop**
+
+<p>
+  <img src="https://img.shields.io/badge/version-1.0.0-8B5CF6?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/license-MIT-22C55E?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Open%20Source-Yes-08C0FF?style=for-the-badge" alt="Open Source">
+</p>
+
+### 🌐 Live Demo
+
+<p>
+  <a href="https://gislaine-programadora.github.io/gbit-ecossitema/">
+    <strong>🚀 Access GBIT CLI Ecosystem Live Demo</strong>
+  </a>
+</p>
+
+</div>
+
+      
+      
+      
+      
+      # 🚀 GBIT CLI Ecosystem
 
 <p align="center"> <img src="assets/gbit-ecossistema.png" alt="GBIT-FIX — Auto Repair & Start" width="700" > </p>
 
