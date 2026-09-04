@@ -1,12 +1,3 @@
-<div align="center">
-
-<img src="./assets/gbit-ecossistema.png" alt="GBIT CLI Ecosystem" width="400"/>
-
-</div>
-
-
-<div align="center">
-
 # 🚀 GBIT CLI Ecosystem
 
 <img src="./assets/gbit-ecossistema.png" width="500" alt="GBIT CLI Ecosystem">
