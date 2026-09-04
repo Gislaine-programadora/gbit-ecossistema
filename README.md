@@ -6,7 +6,7 @@
   <img
     src="assets/gbit-ecossistema.png"
     alt="GBIT CLI Ecosystem"
-    width="900"
+    width="750"
   >
 </p>
 
