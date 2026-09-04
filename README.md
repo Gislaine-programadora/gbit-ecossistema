@@ -1,5 +1,7 @@
 # 🚀 GBIT CLI Ecosystem
 
+<p align="center"> <img src="assets/gbit-ecossistema.png" alt="GBIT-FIX — Auto Repair & Start" width="1200" > </p>
+
 <img src="./assets/gbit-ecossistema.png" width="500" alt="GBIT CLI Ecosystem">
 
 ### Professional Open Source CLI Tools for Modern Developers
