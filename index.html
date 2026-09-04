@@ -23,6 +23,9 @@
       --green: #3ddc84;
       --orange: #ffb347;
       --violet: #b98bff;
+      --pink: #ff61ef;
+      --red: #ff4757;
+      --cyan: #00f2fe;
     }
 
     *{ margin:0; padding:0; box-sizing:border-box; }
@@ -66,13 +69,18 @@
       position:relative;
     }
 
+    /* Logo ampliada para dar mais destaque visual */
     .logo-mark{
-      width:180px;
-      max-width:90%;
+      width:260px;
+      max-width:95%;
       height:auto;
       display:block;
-      margin:0 auto 24px;
-      filter: drop-shadow(0 0 46px rgba(139,108,255,.4));
+      margin:0 auto 28px;
+      filter: drop-shadow(0 0 55px rgba(139,108,255,.5));
+      transition: transform 0.3s ease;
+    }
+    .logo-mark:hover{
+      transform: scale(1.03);
     }
 
     .eyebrow{
@@ -82,7 +90,7 @@
       color:var(--blue);
       background:rgba(8,192,255,.08);
       border:1px solid rgba(8,192,255,.25);
-      padding:7px 14px; border-radius:100px;
+      padding:7px 16px; border-radius:100px;
       margin-bottom:26px;
     }
     .eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--green); box-shadow:0 0 8px var(--green); }
@@ -107,7 +115,7 @@
     }
 
     header p.sub{
-      max-width:620px;
+      max-width:650px;
       margin:0 auto;
       font-size: clamp(14px,1.6vw,16px);
       color:var(--text-dim);
@@ -117,7 +125,7 @@
 
     /* ---------- TERMINAL ---------- */
     .terminal{
-      max-width:640px;
+      max-width:680px;
       margin:48px auto 0;
       background:var(--panel);
       border:1px solid var(--panel-line);
@@ -166,9 +174,9 @@
     }
 
     .container{
-      width:1180px; max-width:92%; margin:0 auto 40px;
+      width:1240px; max-width:92%; margin:0 auto 40px;
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
       gap:26px;
     }
 
@@ -249,8 +257,9 @@
     .strip{
       display:inline-flex; flex-wrap:wrap; justify-content:center; gap:10px;
       background:var(--panel); border:1px solid var(--panel-line);
-      padding:16px 22px; border-radius:14px;
+      padding:18px 24px; border-radius:14px;
       font-family:'JetBrains Mono', monospace; font-size:13.5px;
+      max-width: 1000px;
     }
     .strip span{
       padding:6px 12px; border-radius:8px; background:#0b0f24;
@@ -302,17 +311,17 @@
 
   <!-- HERO HEADER -->
   <header>
-    <!-- Logo principal ajustada na hierarquia correta -->
+    <!-- Logo principal ampliada no banner -->
     <img src="./assets/gbit-ecossistema.png" alt="GBIT CLI Ecosystem" class="logo-mark">
 
-    <div class="eyebrow"><span class="dot"></span> 5 CLIs · npm registry</div>
+    <div class="eyebrow"><span class="dot"></span> 11 CLIs · npm registry</div>
 
     <h1>GBIT Ecosystem</h1>
-    <p class="tagline">CLI tools that accelerate your Web3 and Frontend development</p>
+    <p class="tagline">CLI tools that accelerate your Web3, Database, Containers and Frontend development</p>
 
     <p class="sub">
-      Scaffold projects, clone &amp; run repos, generate docs, and spin up test wallets —
-      <b>your toolbox. more productivity. better results.</b>
+      Scaffold apps, manage containers, orchestrate databases, generate docs, and interact with Web3 —
+      <b>your ultimate developer toolbox.</b>
     </p>
 
     <!-- TERMINAL ANIMATION -->
@@ -325,11 +334,89 @@
   </header>
 
   <div class="section-label">The toolkit</div>
-  <div class="section-title">Five tools. One ecosystem.</div>
+  <div class="section-title">Eleven tools. One unified ecosystem.</div>
 
   <!-- MAIN TOOLS CONTAINER -->
   <div class="container" id="tools">
 
+    <!-- gbit-container -->
+    <div class="card" style="--accent:var(--blue)">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      </div>
+      <div class="tag">Orchestration · DevOps</div>
+      <h2>gbit-container</h2>
+      <p class="desc">Native process manager and light orchestrator. Run Python, Node, AI and Go stacks without Docker dependencies.</p>
+      <div class="code-row"><span>npx gbit-container</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-container')">Copy</button></div>
+    </div>
+
+    <!-- gbit-next -->
+    <div class="card" style="--accent:var(--orange)">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+      </div>
+      <div class="tag">Next.js Framework</div>
+      <h2>gbit-next</h2>
+      <p class="desc">Scaffolds Next.js + TypeScript + Tailwind apps with pre-built templates for SaaS, Dashboards, Ecommerce and CRMs.</p>
+      <div class="code-row"><span>npx gbit-next</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-next')">Copy</button></div>
+    </div>
+
+    <!-- gbit-react -->
+    <div class="card" style="--accent:var(--cyan)">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/><path d="m4.93 4.93 1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </div>
+      <div class="tag">Frontend React</div>
+      <h2>gbit-react</h2>
+      <p class="desc">Fast Vite + React + TypeScript setup with Tailwind CSS, state management, and modern component architecture ready to run.</p>
+      <div class="code-row"><span>npx gbit-react</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-react')">Copy</button></div>
+    </div>
+
+    <!-- gbit-db-dados -->
+    <div class="card" style="--accent:var(--pink)">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5c0 1.66 4 3 9 3s9-1.34 9-3"/><path d="M21 5v14c0 1.66-4 3-9 3s-9-1.34-9-3V5"/></svg>
+      </div>
+      <div class="tag">Mock Data · Testing</div>
+      <h2>gbit-db-dados</h2>
+      <p class="desc">Generates realistic mock datasets, JSON seeders, and fake databases for rapid UI testing and API prototyping.</p>
+      <div class="code-row"><span>npx gbit-db-dados</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-db-dados')">Copy</button></div>
+    </div>
+
+    <!-- gbit-db -->
+    <div class="card" style="--accent:var(--green)">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+      </div>
+      <div class="tag">Database CLI</div>
+      <h2>gbit-db</h2>
+      <p class="desc">Manage SQL, PostgreSQL, and SQLite databases directly from your terminal with auto-migrations and instant schema inspection.</p>
+      <div class="code-row"><span>npx gbit-db</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-db')">Copy</button></div>
+    </div>
+
+    <!-- gbit-build -->
+    <div class="card" style="--accent:var(--red)">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+      </div>
+      <div class="tag">Build Tool · Bundler</div>
+      <h2>gbit-build</h2>
+      <p class="desc">Blazing fast bundler and optimizer CLI for fullstack apps. Compiles, tree-shakes, and produces clean production builds.</p>
+      <div class="code-row"><span>npx gbit-build</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-build')">Copy</button></div>
+    </div>
+
+    <!-- gbit-stakin -->
+    <div class="card" style="--accent:var(--purple)">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10h8"/></svg>
+      </div>
+      <div class="tag">Web3 · DeFi</div>
+      <h2>gbit-stakin</h2>
+      <p class="desc">CLI for Web3 staking smart-contract simulation, yield farming calculations, and token lockup testing locally.</p>
+      <div class="code-row"><span>npx gbit-stakin</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-stakin')">Copy</button></div>
+    </div>
+
+    <!-- gbit-address -->
     <div class="card" style="--accent:var(--violet)">
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 10h18"/><circle cx="16" cy="14.5" r="1.2"/></svg>
@@ -340,6 +427,7 @@
       <div class="code-row"><span>npx gbit-address</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-address')">Copy</button></div>
     </div>
 
+    <!-- gbit-readme -->
     <div class="card" style="--accent:var(--blue)">
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>
@@ -349,7 +437,21 @@
       <p class="desc">Scans your package.json and folder structure, then writes a complete, professional README.md — badges included.</p>
       <div class="code-row"><span>npx gbit-readme</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-readme')">Copy</button></div>
     </div>
+    
 
+     <!-- gbit-fix -->
+   <div class="card" style="--accent:var(--green)">
+   <div class="icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+  </div>
+   <div class="tag">Auto Repair · CLI</div>
+   <h2>gbit-fix</h2>
+   <p class="desc">Auto-repair de node_modules corrompidos, resolução de conflitos de dependências e start inteligente em um comando.</p>
+   <div class="code-row"><span>npx gbit-fix</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-fix')">Copy</button></div>
+  </div>
+
+
+    <!-- gbit-start -->
     <div class="card" style="--accent:var(--green)">
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l6-9 6 9-6 9z"/><path d="M11 3v18"/></svg>
@@ -357,20 +459,10 @@
       <div class="tag">Any repository</div>
       <h2>gbit-start</h2>
       <p class="desc">Clone a repo, install dependencies (resolving version conflicts automatically), and get a running local URL.</p>
-      <!-- Correção: passava a string errada para o clipboard antes -->
       <div class="code-row"><span>npx gbit-start &lt;repo-url&gt;</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-start <repo-url>')">Copy</button></div>
     </div>
 
-    <div class="card" style="--accent:var(--orange)">
-      <div class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-      </div>
-      <div class="tag">Next.js</div>
-      <h2>gbit-next</h2>
-      <p class="desc">Scaffolds a Next.js + TypeScript + Tailwind app with ready-made templates — Dashboard, Ecommerce, SaaS, CRM, ERP.</p>
-      <div class="code-row"><span>npx gbit-next</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-next')">Copy</button></div>
-    </div>
-
+    <!-- create-gbit-app -->
     <div class="card" style="--accent:var(--purple)">
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
@@ -381,22 +473,23 @@
       <div class="code-row"><span>npx create-gbit-app my-app</span><button class="copy-btn" onclick="copyCmd(this,'npx create-gbit-app my-app')">Copy</button></div>
     </div>
 
-    <div class="card soon" style="--accent:var(--text-dim)">
-      <div class="tag">Coming soon</div>
-      <h2>More on the way</h2>
-      <p class="desc">The ecosystem keeps growing — new tools for backend scaffolding and smart-contract projects are next.</p>
-    </div>
-
   </div>
 
   <!-- BOTTOM STRIP -->
   <div class="strip-wrap" id="install">
-    <div class="strip-tag">FIVE CLIS. INFINITE POSSIBILITIES.</div>
+    <div class="strip-tag">11 CLIS. INFINITE POSSIBILITIES.</div>
     <div class="strip">
+      <span>npx gbit-container</span>
+      <span>npx gbit-next</span>
+      <span>npx gbit-react</span>
+      <span>npx gbit-db-dados</span>
+      <span>npx gbit-db</span>
+      <span>npx gbit-build</span>
+      <span>npx gbit-stakin</span>
       <span>npx gbit-address</span>
       <span>npx gbit-readme</span>
+      <span>npx gbit-fix</span>
       <span>npx gbit-start</span>
-      <span>npx gbit-next</span>
       <span>npx create-gbit-app</span>
     </div>
   </div>
@@ -430,10 +523,17 @@
     }
 
     const commands = [
+      'gbit-container',
+      'gbit-next',
+      'gbit-react',
+      'gbit-db-dados',
+      'gbit-db',
+      'gbit-build',
+      'gbit-stakin',
       'gbit-address',
       'gbit-readme',
+      'gbit-fix',
       'gbit-start <repo-url>',
-      'gbit-next',
       'create-gbit-app my-app'
     ];
 
@@ -453,7 +553,6 @@
       setTimeout(type, deleting ? 28 : 55);
     }
     
-    // Inicia a animação apenas se o elemento existir
     if(typedEl) type();
   </script>
 </body>
