@@ -314,7 +314,7 @@
     <!-- Logo principal ampliada no banner -->
     <img src="./assets/gbit-ecossistema.png" alt="GBIT CLI Ecosystem" class="logo-mark">
 
-    <div class="eyebrow"><span class="dot"></span> 11 CLIs · npm registry</div>
+    <div class="eyebrow"><span class="dot"></span> 12 CLIs · npm registry</div>
 
     <h1>GBIT Ecosystem</h1>
     <p class="tagline">CLI tools that accelerate your Web3, Database, Containers and Frontend development</p>
@@ -350,6 +350,26 @@
       <div class="code-row"><span>npx gbit-container</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-container')">Copy</button></div>
     </div>
 
+
+    <!-- Card do Gbit Shell para o Ecossistema -->
+<div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-purple-500/50 transition">
+    <div class="flex items-center justify-between mb-4">
+        <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+            <i data-lucide="terminal" class="w-5 h-5"></i>
+        </div>
+        <span class="text-xs font-semibold bg-purple-500/10 text-purple-300 px-2.5 py-1 rounded-full">v1.0.0 (NPM)</span>
+    </div>
+    <h3 class="text-lg font-bold text-white mb-2">Gbit Shell</h3>
+    <p class="text-slate-400 text-sm mb-6">O terminal definitivo para desenvolvedores Web3 e full-stack, integrado com Git e gerenciamento de projetos.</p>
+    <div class="flex items-center space-x-3">
+        <a href="https://gislaine-programadora.github.io/gbit-shell/" target="_blank" class="flex-1 bg-purple-600 hover:bg-purple-500 text-white text-center py-2 rounded-xl text-xs font-semibold transition">
+            Ver Landing Page
+        </a>
+        <a href="https://github.com/Gislaine-programadora/gbit-shell" target="_blank" class="bg-slate-800 hover:bg-slate-700 p-2 rounded-xl text-slate-300 transition">
+            <i data-lucide="github" class="w-4 h-4"></i>
+        </a>
+    </div>
+</div>
     <!-- gbit-next -->
     <div class="card" style="--accent:var(--orange)">
       <div class="icon">
@@ -479,6 +499,7 @@
   <div class="strip-wrap" id="install">
     <div class="strip-tag">11 CLIS. INFINITE POSSIBILITIES.</div>
     <div class="strip">
+      <span>npx gbit-shell</span>
       <span>npx gbit-container</span>
       <span>npx gbit-next</span>
       <span>npx gbit-react</span>
@@ -523,6 +544,7 @@
     }
 
     const commands = [
+      'gbit-shell',
       'gbit-container',
       'gbit-next',
       'gbit-react',
