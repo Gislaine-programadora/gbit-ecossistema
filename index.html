@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -248,6 +248,51 @@
     }
     .copy-btn:hover{ border-color:var(--accent); color:var(--accent); }
 
+    /* ---------- GBIT SHELL CARD ---------- */
+    .shell-links{
+      display:flex;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .shell-link{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:9px 12px;
+      border-radius:10px;
+      border:1px solid var(--panel-line);
+      font-size:12px;
+      font-weight:600;
+      transition:.2s ease;
+      text-align:center;
+    }
+
+    .shell-link-primary{
+      background:rgba(139,108,255,.14);
+      border-color:rgba(139,108,255,.35);
+      color:#c9bfff;
+    }
+
+    .shell-link-primary:hover{
+      background:rgba(139,108,255,.24);
+      border-color:rgba(139,108,255,.65);
+      color:#fff;
+    }
+
+    .shell-link-secondary{
+      background:#0b0f24;
+      color:var(--text-dim);
+    }
+
+    .shell-link-secondary:hover{
+      border-color:var(--purple);
+      color:var(--text);
+    }
+
+
     .card.soon{ display:flex; flex-direction:column; justify-content:center; align-items:flex-start; }
     .card.soon .desc{ min-height:auto; }
 
@@ -314,7 +359,7 @@
     <!-- Logo principal ampliada no banner -->
     <img src="./assets/gbit-ecossistema.png" alt="GBIT CLI Ecosystem" class="logo-mark">
 
-    <div class="eyebrow"><span class="dot"></span> 12 CLIs · npm registry</div>
+    <div class="eyebrow"><span class="dot"></span> 13 CLIs · npm registry</div>
 
     <h1>GBIT Ecosystem</h1>
     <p class="tagline">CLI tools that accelerate your Web3, Database, Containers and Frontend development</p>
@@ -334,7 +379,7 @@
   </header>
 
   <div class="section-label">The toolkit</div>
-  <div class="section-title">Eleven tools. One unified ecosystem.</div>
+  <div class="section-title">Thirteen tools. One unified ecosystem.</div>
 
   <!-- MAIN TOOLS CONTAINER -->
   <div class="container" id="tools">
@@ -349,29 +394,37 @@
       <p class="desc">Native process manager and light orchestrator. Run Python, Node, AI and Go stacks without Docker dependencies.</p>
       <div class="code-row"><span>npx gbit-container</span><button class="copy-btn" onclick="copyCmd(this,'npx gbit-container')">Copy</button></div>
     </div>
+    <!-- gbit-shell -->
+    <div class="card" style="--accent:var(--purple)">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="4 17 10 11 4 5"/>
+          <line x1="12" y1="19" x2="20" y2="19"/>
+        </svg>
+      </div>
+      <div class="tag">Terminal · Developer CLI</div>
+      <h2>gbit-shell</h2>
+      <p class="desc">
+        Terminal poderoso e limpo para desenvolvedores, com integração GitHub,
+        gerenciamento de projetos, jobs e perfil para VS Code.
+      </p>
+      <div class="code-row">
+        <span>gbit</span>
+        <button class="copy-btn" onclick="copyCmd(this,'gbit')">Copy</button>
+      </div>
+      <div class="shell-links">
+        <a href="https://gislaine-programadora.github.io/gbit-shell/" target="_blank"
+           rel="noopener noreferrer" class="shell-link shell-link-primary">
+          Ver Landing Page
+        </a>
+        <a href="https://github.com/Gislaine-programadora/gbit-shell" target="_blank"
+           rel="noopener noreferrer" class="shell-link shell-link-secondary">
+          GitHub
+        </a>
+      </div>
+    </div>
 
-
-     <!-- Card do Gbit Shell para o Ecossistema -->
-     <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-purple-500/50 transition flex flex-col justify-between">
-       <div>
-          <div class="flex items-center justify-between mb-4">
-             <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
-                <i data-lucide="terminal" class="w-5 h-5"></i>
-            </div>
-            <span class="text-xs font-semibold bg-purple-500/10 text-purple-300 px-2.5 py-1 rounded-full">v1.0.0 (NPM)</span>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2">Gbit Shell</h3>
-          <p class="text-slate-400 text-sm mb-6">O terminal definitivo para desenvolvedores Web3 e full-stack, integrado com Git e gerenciamento de projetos.</p>
-         </div>
-          <div class="flex items-center space-x-3">
-          <a href="https://gislaine-programadora.github.io/gbit-shell/" target="_blank" class="flex-1 bg-purple-600 hover:bg-purple-500 text-white text-center py-2 rounded-xl text-xs font-semibold transition">
-            Ver Landing Page
-          </a>
-           <a href="https://github.com/Gislaine-programadora/gbit-shell" target="_blank" class="bg-slate-800 hover:bg-slate-700 p-2.5 rounded-xl text-slate-300 transition flex items-center justify-center">
-            <i data-lucide="github" class="w-4 h-4"></i>
-         </a>
-        </div>
-       </div>
 
     <!-- gbit-next -->
     <div class="card" style="--accent:var(--orange)">
@@ -500,7 +553,7 @@
 
   <!-- BOTTOM STRIP -->
   <div class="strip-wrap" id="install">
-    <div class="strip-tag">11 CLIS. INFINITE POSSIBILITIES.</div>
+    <div class="strip-tag">13 CLIS. INFINITE POSSIBILITIES.</div>
     <div class="strip">
       <span>npx gbit-shell</span>
       <span>npx gbit-container</span>

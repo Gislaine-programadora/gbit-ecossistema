@@ -1,8 +1,4 @@
-<div align="center">
 
-<img src="./assets/gbit-ecossistema.png" alt="GBIT CLI Ecosystem" width="400"/>
-
-</div>
 
 
 <div align="center">
