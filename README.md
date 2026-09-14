@@ -1,6 +1,3 @@
-
-
-
 <div align="center">
 
 # 🚀 GBIT CLI Ecosystem
