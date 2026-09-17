@@ -6,6 +6,65 @@
 
 ### Professional Open Source CLI Tools for Modern Developers
 
+Build • Clone • Generate • Document • Develop • Automate
+
+![Version](https://img.shields.io/badge/version-1.0.0-8B5CF6?style=for-the-badge)
+![Node](https://img.shields.io/badge/node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-22C55E?style=for-the-badge)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-08C0FF?style=for-the-badge)
+
+### 🌐 Live Demo
+
+https://gislaine-programadora.github.io/gbit-ecossistema/
+
+</div>
+
+---
+
+# 📦 About
+
+The **GBIT CLI Ecosystem** is a collection of professional command-line tools designed to speed up modern web development.
+
+Whether you're creating a new project, cloning repositories, generating documentation, managing background processes or building Web3 & full-stack applications, GBIT provides simple and powerful commands to automate your workflow.
+
+---
+
+# 🚀 CLI Collection
+
+| CLI | Description |
+|------|-------------|
+| 🐚 **gbit-shell** | O terminal definitivo para desenvolvedores Web3 e full-stack com suporte a git e atalhos customizados. |
+| ⚡ **create-gbit-app** | Create complete Vite + React + TypeScript projects instantly. |
+| ▲ **gbit-next** | Generate a complete Next.js project ready for development. |
+| 📄 **gbit-readme** | Automatically generate professional README.md files. |
+| 🚀 **gbit-start** | Clone a GitHub repository, install dependencies and start the project automatically. |
+| 🔑 **gbit-address** | Generate Ethereum test wallets with multiple address/private key pairs. |
+| 🛠️ **web3gbit-cli** | Ferramenta de linha de comando para configuração e scaffolding de ecossistemas Web3. |
+| ⚡ **create-web3gbit-forge** | Inicializador de projetos Foundry e contratos inteligentes Web3. |
+| 💻 **gbitcode-platform** | Gerenciador de versão de código CLI e painel web para desenvolvedores. |
+| 🤖 **nexus-trader** | Terminal automatizado de negociação e monitoramento cripto via FastAPI e CCXT. |
+| 📦 **gbit-container** | Sistema de gerenciamento de processos Node.js e dashboard HTTP para serviços em background. |
+| 🧠 **gbit-gemini** | Aplicação full-stack integrada com inteligência artificial baseada em Vite, React e Node.js. |
+| 📸 **gbit-event-camera** | Sistema de ativação de câmera para eventos com controle de acesso e molduras personalizadas. |
+
+---
+
+# ⚡ Quick Start
+
+## Usar o Gbit Shell
+```bash
+npm install -g gbit-shell
+
+-------
+
+<div align="center">
+
+# 🚀 GBIT CLI Ecosystem
+
+<img src="./assets/gbit-ecossistema.png" width="500" alt="GBIT CLI Ecosystem">
+
+### Professional Open Source CLI Tools for Modern Developers
+
 Build • Clone • Generate • Document • Develop
 
 ![Version](https://img.shields.io/badge/version-1.0.0-8B5CF6?style=for-the-badge)
