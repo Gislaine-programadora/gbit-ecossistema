@@ -15,7 +15,7 @@ Build • Clone • Generate • Document • Develop
 
 ### 🌐 Live Demo
 
-https://gislaine-programadora.github.io/gbit-ecossitema/
+https://gislaine-programadora.github.io/gbit-ecossistema/
 
 </div>
 
